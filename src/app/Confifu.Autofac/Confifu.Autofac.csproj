@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Aufofac service provider implementation for confifu</Description>
+    <VersionPrefix>2.0.0</VersionPrefix>
+    <Authors>steinpilz;ivan.benko</Authors>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <AssemblyName>Confifu.Autofac</AssemblyName>
+    <PackageId>Confifu.Autofac</PackageId>
+    <PackageTags>confifu;configuration;.net;autofac</PackageTags>
+    <PackageProjectUrl>https://github.com/steinpilz/confifu</PackageProjectUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confifu.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Confifu.Abstractions.DependencyInjection" Version="2.0.0" />
+    <PackageReference Include="Autofac" Version="4.4.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>
