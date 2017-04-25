@@ -1,13 +1,19 @@
 using Confifu.Abstractions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using Xunit;
 using Shouldly;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Confifu.Autofac.Tests
 {
     public class AppSetupExtensionsTest
     {
+        static AppSetupExtensionsTest()
+        {
+            ModuleInitializer.Initialize();
+
+        }
+
         [Fact]
         public void it_throws_exception_if_there_is_no_service_collection()
         {

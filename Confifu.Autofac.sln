@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{CC408C3F-1C0B-498C-A043-DF8DD3F7FDE8}"
 	ProjectSection(SolutionItems) = preProject
-		build.fsx = build.fsx
+		.env = .env
+		build.bat = build.bat
+		scripts\build.fsx = scripts\build.fsx
+		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Confifu.Autofac", "src\app\Confifu.Autofac\Confifu.Autofac.csproj", "{A0216978-0E31-4C63-9566-D41E9897DFFD}"
