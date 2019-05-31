@@ -3,6 +3,7 @@ using System;
 using Xunit;
 using Shouldly;
 using Microsoft.Extensions.DependencyInjection;
+using Autofac;
 
 namespace Confifu.Autofac.Tests
 {
