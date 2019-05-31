@@ -4,7 +4,7 @@
     <Description>Aufofac service provider implementation for confifu</Description>
     <VersionPrefix>2.0.0</VersionPrefix>
     <Authors>steinpilz;ivan.benko</Authors>
-    <TargetFrameworks>netstandard1.1;net451;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Confifu.Autofac</AssemblyName>
     <PackageId>Confifu.Autofac</PackageId>
     <PackageTags>confifu;configuration;.net;autofac</PackageTags>
@@ -14,8 +14,8 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.2" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
-    <PackageReference Include="Confifu.Abstractions" Version="2.1.2" />
-    <PackageReference Include="Confifu.Abstractions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Confifu.Abstractions" Version="2.1.3" />
+    <PackageReference Include="Confifu.Abstractions.DependencyInjection" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
