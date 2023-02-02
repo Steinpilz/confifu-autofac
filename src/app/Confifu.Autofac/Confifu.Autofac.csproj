@@ -9,6 +9,7 @@
     <PackageId>Confifu.Autofac</PackageId>
     <PackageTags>confifu;configuration;.net;autofac</PackageTags>
     <PackageProjectUrl>https://github.com/steinpilz/confifu-autofac</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
