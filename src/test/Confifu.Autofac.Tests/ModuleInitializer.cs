@@ -1,8 +1,5 @@
 ﻿using System;
 using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using Confifu.Abstractions;
-using Confifu.Abstractions.DependencyInjection;
 using System.Reflection;
 
 namespace Confifu.Autofac
@@ -17,7 +14,7 @@ namespace Confifu.Autofac
                 var name = new AssemblyName(args.Name);
                 if (name.Name == "Autofac")
                 {
-                    return typeof(global::Autofac.IContainer).Assembly;
+                    return typeof(IContainer).Assembly;
                 }
                 return null;
             };

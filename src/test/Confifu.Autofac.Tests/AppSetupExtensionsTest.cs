@@ -3,7 +3,8 @@ using System;
 using Xunit;
 using Shouldly;
 using Microsoft.Extensions.DependencyInjection;
-using Autofac;
+using ServiceCollection = Confifu.Abstractions.DependencyInjection.ServiceCollection;
+
 
 namespace Confifu.Autofac.Tests
 {
@@ -25,6 +26,22 @@ namespace Confifu.Autofac.Tests
                 appConfig.SetupAutofacContainer();
             });   
         }
+
+#if NET8_0_OR_GREATER
+        [Fact]
+        public void it_supports_keyed_service_registration_for_net8()
+        {
+            var appConfig = new AppConfig();
+            var sc = new ServiceCollection();
+            sc.AddKeyedTransient<IServiceA, ServiceA>("test-key");
+            appConfig.SetServiceCollection(sc); 
+            appConfig.SetupAutofacContainer();
+            var sp = appConfig.GetServiceProvider();
+            var keyedServiceA = sp.GetKeyedService<IServiceA>("test-key");
+            keyedServiceA.ShouldNotBeNull();
+            keyedServiceA.AName().ShouldBe(new ServiceA().AName());
+        }
+#endif
 
         [Fact]
         public void it_creates_valid_service_provider()
